@@ -1,0 +1,339 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: black;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+
+  
+ nav {
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 8% 0 8%;
+    position: fixed;
+    z-index: 9;
+    background-color: #101010;
+    width: 100%;
+    height: 18%;
+}
+.logo {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span {
+    color: yellow;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 40px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: yellow;
+    transition: .4s;
+}
+
+.gambar{
+    width: 50vh;
+    height: 50vh;
+    border-radius: 50%;
+    float: right;
+    margin-top: 30vh;
+    margin-right: 10vh;
+    border: 5px solid yellow;
+    background-image: url('../img/ft2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-40%);
+}
+h1 {
+    color: white;
+    font-size: 50px;
+    margin: 10px 0px 10px;
+}
+h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+    max-width: 50%;
+}
+h4 {
+    color: yellow;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.icon a {
+    display: inline-block;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid yellow;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: white;
+    margin: 3rem 1.5rem 3rem 0;
+    padding-top: 12px;
+    transition: .5s ease;
+    text-align: center;
+    margin-top: -20px;
+}
+.icon a:hover {
+    background: yellow;
+    color: rgb(32, 28, 28);
+    box-shadow: 0 0 1rem (132, 219, 234);
+}
+.news {
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+.news form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid yellow;
+    outline: none;
+    border-radius: 30px;
+}
+.news form input:last-child{
+    position: absolute;
+    display: inline;
+    outline: none;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: yellow;
+    box-shadow: 0px 0px 5px black, 0px 0px 15px black;
+    top: 6px;
+    right: 6px;
+}
+.about {
+    width: 100%;
+    padding: 150px 0px;
+    background-color: #191919;
+}
+.about img {
+    height: auto;
+    width: 300px;
+    border-radius: 20px;
+    border: 5px solid white;
+}
+.about-text {
+    width: 500px;
+    padding-left: 20px;
+}
+.main {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 40px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.about-text h5 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.about-text p {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+button {
+    background-color: yellow;
+    color: white;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover {
+    background-color: transparent;
+    border: 2px solid yellow;
+    cursor: pointer;
+}
+.service {
+    background: #101010;
+    width: 100%;
+    padding: 30px 0;
+}
+.title h2 {
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    text-align: center;
+    margin: auto;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    text-align: center;
+}
+.card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0;
+    color: yellow;
+}
+h5 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra p {
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.card .button {
+    background-color: yellow;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+}
+.card:hover {
+    transform: scale(1.1);
+    transition: .10s;
+}
+.card .button:hover {
+    background-color: transparent;
+    border: 2px solid yellow;
+    cursor: pointer;
+}
+
+.hobi {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #191919;
+}
+.hobi .judul {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    padding: 50px;
+}
+.foto img {
+    height: auto;
+    width: 200px;
+    border: 5px solid yellow;
+    border-radius: 10px;
+    margin: 80px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+}
+.kontak-saya {
+    
+    max-width: 100%;
+    background: black;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.kontak-saya p {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.input-box {
+    padding: 5px;
+    margin-top: 5px;
+    outline: none;
+    width: 50px;
+}
+
+ .buttondua {
+    padding: 5px;
+    width: 28%;
+    height: 30px;
+    border-radius: 30px;
+    background: yellow;
+    color: black;
+    margin-right: 10%;
+    margin-left: 19vh;
+    box-shadow: 2px 2px 2px white;
+ }
+
+.buttondua:hover {
+    background: rgb(255, 145, 0);
+}
+
+
+ textarea {
+    padding: 10px;
+    border-radius: 20px;
+    height: 70%;
+    width: 55vh;
+ }
+
+ footer p {
+    align-items: center;
+    padding: 30px;
+    background-color: #191919;
+    color: white;
+    text-align: center;
+ }
+
+ 
